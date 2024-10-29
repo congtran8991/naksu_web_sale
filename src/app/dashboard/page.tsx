@@ -11,6 +11,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import { Test } from 'vite-app/UI-Base/src';
 import { TestA } from "vite-app/UI-Base";
 import "swiper/css";
+import PoliceAndInstruct from "@/components/dashboard/PoliceAndInstruct";
+import Product from "@/components/dashboard/Product";
+import ExploreMore from "@/components/dashboard/ExploreMore";
+import NewPost from "@/components/dashboard/NewPost";
 
 export default function Dashboard() {
   const { t } = useTranslation();
@@ -52,68 +56,16 @@ export default function Dashboard() {
           </ul>
         </div>
       </div>
-      <div className="container">
-        <Carousel />
-      </div>
-      <div className="container">
-        <div className="grid grid-cols-[3fr_5fr_5fr] gap-4">
-          <div className="w-full">
-            <div className="flex flex-wrap justify-between">
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-              <div className="w-3/6">
-                <div className="box-border border-2 border-gray-500 h-32">
-                  1
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div className="bg-green-200">
-            <div>Sản phẩm nổi bật</div>
-            <div>
-              <Swiper className="overflow-hidden">
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 1</SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-          <div className="w-full bg-red-200">Cột 3 (4 phần)</div>
-        </div>
-      </div>
+      <Carousel />
+
+      <Product/>
+
+      <PoliceAndInstruct />
+
+      <ExploreMore/>
+
+      <NewPost/>
     </div>
   );
 }

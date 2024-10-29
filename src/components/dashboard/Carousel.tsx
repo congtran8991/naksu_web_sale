@@ -13,7 +13,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const Carousel: React.FC = () => {
   return (
-    <>
+    <div className="min-w-full">
       <Swiper
         cssMode={true}
         navigation={true}
@@ -21,13 +21,13 @@ const Carousel: React.FC = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper h-slide object-contain"
+        className="mySwiper  mn:h-80 lg:h-slide"
       >
         <SwiperSlide><img className="object-contain" src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></SwiperSlide>
         <SwiperSlide><img className="object-contain" src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></SwiperSlide>
         <SwiperSlide><img className="object-contain" src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 
