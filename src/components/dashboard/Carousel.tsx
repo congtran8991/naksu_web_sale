@@ -14,7 +14,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 const Carousel: React.FC = () => {
   console.log();
   return (
-    <div className="min-w-full">
+    <div className="max-w-[100vw] overflow-auto">
       <Swiper
         navigation={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}

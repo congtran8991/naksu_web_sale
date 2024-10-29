@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.container-custom {
+  @apply sm:container max-w-[100vw] overflow-auto mn:px-4 sm:px-0;
+}

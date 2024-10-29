@@ -1,6 +1,6 @@
 const NewPost: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container-custom">
       <div>Bai Viet Moi Nhat</div>
       <div>
         Blog tập hợp những bản tin, bài viết về kinh nghiệm mua sắm, chăm sóc bé
@@ -9,9 +9,7 @@ const NewPost: React.FC = () => {
       </div>
       <div>
         <div className="flex flex-col md:flex-row">
-          <div className="bg-blue-200 p-4 md:flex-[5]">
-            Phần 1 (3 phần)
-          </div>
+          <div className="bg-blue-200 p-4 md:flex-[5]">Phần 1 (3 phần)</div>
 
           <div className="bg-green-200 p-4 md:flex-[5]">Phần 2 (5 phần)</div>
           <div className="bg-red-200 p-4 md:flex-[5]">Phần 2 (5 phần)</div>

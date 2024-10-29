@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 const ExploreMore: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container-custom">
       <div>Title</div>
       <div>
         Bạn có thể tìm thấy những phẩm tốt và chi phí được giảm tới 70% với
