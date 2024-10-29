@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const Carousel: React.FC = () => {
+  console.log()
   return (
     <div className="min-w-full">
       <Swiper
