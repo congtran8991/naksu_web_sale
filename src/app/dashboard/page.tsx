@@ -59,13 +59,13 @@ export default function Dashboard() {
 
       <Carousel />
 
-      <Product/>
+      <Product />
 
       <PoliceAndInstruct />
 
-      <ExploreMore/>
+      <ExploreMore />
 
-      <NewPost/>
+      <NewPost />
     </div>
   );
 }
