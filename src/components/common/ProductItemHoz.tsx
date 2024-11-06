@@ -1,5 +1,5 @@
-"use client"
-const ProductItem: React.FC = () => {
+"use client";
+const ProductItemHoz: React.FC = () => {
   return (
     <div>
       <div className="relative w-full">
@@ -14,4 +14,4 @@ const ProductItem: React.FC = () => {
   );
 };
 
-export default ProductItem;
+export default ProductItemHoz;

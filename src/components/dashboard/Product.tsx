@@ -8,8 +8,9 @@ import {
   Keyboard,
   Autoplay,
 } from "swiper/modules";
+import ProductItemVer from "../common/ProductItemVer";
 const Product: React.FC = () => {
-  console.log("component_product")
+  console.log("component_product");
   return (
     <div className="container-custom">
       <div className="flex flex-col md:flex-row gap-4">
@@ -24,8 +25,20 @@ const Product: React.FC = () => {
             <div className="h-28 border-[1px] border-[#ebebeb] bg-no-repeat bg-center bg-[length:65%]  bg-clip-border bg-[url('https://bizweb.dktcdn.net/100/117/632/themes/157694/assets/logo1.png?1564585558451')]" />
             <div className="h-28 border-[1px] border-[#ebebeb] bg-no-repeat bg-center bg-[length:65%]  bg-clip-border bg-[url('https://bizweb.dktcdn.net/100/117/632/themes/157694/assets/logo1.png?1564585558451')]" />
           </div>
+
+          <div className="overflow-hidden">
+            <Swiper
+              modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+            >
+              <SwiperSlide>
+                <ProductItemVer />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductItemVer />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
-        
 
         <div className="border-[1px] border-[#ebebeb] md:flex-[5] overflow-hidden">
           <div className="overflow-hidden">
