@@ -23,9 +23,9 @@ const config: Config = {
         mn: "100px",
         sm: "480px", // Mặc định của Tailwind (Small devices - smartphones)
         md: "768px", // Mặc định của Tailwind (Medium devices - tablets)
-        lg: "1124px", // Mặc định của Tailwind (Large devices - desktops)
-        xl: "1380px", // Mặc định của Tailwind (Extra large devices - larger desktops)
-        "2xl": "1736px", // Mặc định của Tailwind (Extra extra large devices)
+        lg: "1024px", // Mặc định của Tailwind (Large devices - desktops)
+        xl: "1170px", // Mặc định của Tailwind (Extra large devices - larger desktops)
+        "2xl": "1236px", // Mặc định của Tailwind (Extra extra large devices)
       },
     },
   },

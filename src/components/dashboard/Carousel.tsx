@@ -9,15 +9,26 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // Import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+  Autoplay,
+} from "swiper/modules";
+import { useLocale } from "@/contexts/LocaleContext";
+import useTranslation from "@/hooks/useTranslation";
 
 const Carousel: React.FC = () => {
-  console.log();
+  const { t } = useTranslation();
+  const { locale } = useLocale();
+  
   return (
     <div className="max-w-[100vw] overflow-auto">
       <Swiper
         navigation={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        autoplay={{ delay: 5000 }}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="mySwiper  mn:h-80 lg:h-slide"
       >
         <SwiperSlide>

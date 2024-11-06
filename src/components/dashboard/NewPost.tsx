@@ -1,3 +1,4 @@
+"use client";
 const NewPost: React.FC = () => {
   return (
     <div className="container-custom">

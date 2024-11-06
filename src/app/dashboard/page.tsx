@@ -1,4 +1,3 @@
-"use client";
 import Carousel from "@/components/dashboard/Carousel";
 import { useLocale } from "@/contexts/LocaleContext";
 import useTranslation from "@/hooks/useTranslation";
@@ -6,7 +5,6 @@ import KGrid from "@/uikit/Grid";
 import KInput from "@/uikit/Input";
 import { Grid } from "@mui/material";
 import Link from "next/link";
-import { useContext, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { Test } from 'vite-app/UI-Base/src';
 import { TestA } from "vite-app/UI-Base";
@@ -16,11 +14,18 @@ import Product from "@/components/dashboard/Product";
 import ExploreMore from "@/components/dashboard/ExploreMore";
 import NewPost from "@/components/dashboard/NewPost";
 
-export default function Dashboard() {
-  const { t } = useTranslation();
-  const { locale, setLocale } = useLocale();
-  console.log("locale", locale);
-  const [count, setCount] = useState<number>(0);
+export const dynamic = 'force-dynamic'
+
+export async function getTranslation() {
+
+  return {
+  
+  };
+}
+
+export default async function Dashboard() {
+  // const {} = await  getTranslation()
+   
 
   return (
     <div className="grid gap-4">
