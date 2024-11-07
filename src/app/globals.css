@@ -124,3 +124,98 @@ body {
   @apply pb-4 /* 16px 1rem */
 }
 
+
+
+
+
+
+
+
+.m-small {
+  @apply p-1.5 /* 6px 0.375rem */
+}
+
+.mx-small {
+  @apply mx-1.5 /* 6px 0.375rem */
+}
+
+.my-small {
+  @apply my-1.5 /* 6px 0.375rem */
+}
+
+.ml-small {
+  @apply ml-1.5 /* 6px 0.375rem */
+}
+
+.mr-small {
+  @apply mr-1.5 /* 6px 0.375rem */
+}
+
+.mt-small {
+  @apply mt-1.5 /* 6px 0.375rem */
+}
+
+.mb-small {
+  @apply mb-1.5 /* 6px 0.375rem */
+}
+
+/* -------------------------------- */
+
+.m-medium {
+  @apply m-2.5 /* 10px 0.625rem */
+}
+
+.mx-medium {
+  @apply mx-2.5 /* 10px 0.625rem */
+}
+
+.my-medium {
+  @apply my-2.5 /* 10px 0.625rem */
+}
+
+.ml-medium {
+  @apply ml-2.5 /* 10px 0.625rem */
+}
+
+.mr-medium {
+  @apply mr-2.5 /* 10px 0.625rem */
+}
+
+.mt-medium {
+  @apply mt-2.5 /* 10px 0.625rem */
+}
+
+.mb-medium {
+  @apply mb-2.5 /* 10px 0.625rem */
+}
+
+/* -------------------------------- */
+
+.m-large {
+  @apply m-4 /* 16px 1rem */
+}
+
+.mx-large {
+  @apply mx-4 /* 16px 1rem */
+}
+
+.my-large {
+  @apply my-4 /* 16px 1rem */
+}
+
+.ml-large {
+  @apply ml-4 /* 16px 1rem */
+}
+
+.mr-large {
+  @apply mr-4 /* 16px 1rem */
+}
+
+.mt-large {
+  @apply mt-4 /* 16px 1rem */
+}
+
+.mb-large {
+  @apply mb-4 /* 16px 1rem */
+}
+

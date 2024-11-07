@@ -7,14 +7,20 @@ import {
   Mousewheel,
   Keyboard,
   Autoplay,
+  Grid,
 } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+
 import ProductItemVer from "../common/ProductItemVer";
 const Product: React.FC = () => {
   console.log("component_product");
   return (
     <div className="container-custom">
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="sm:hidden md:flex-[3] lg:block">
+        <div className="sm:hidden md:flex-[3] lg:block overflow-hidden">
           <div className="grid grid-cols-2">
             <div className="h-28 border-[1px] border-[#ebebeb] bg-no-repeat bg-center bg-[length:65%]  bg-clip-border bg-[url('https://bizweb.dktcdn.net/100/117/632/themes/157694/assets/logo1.png?1564585558451')]" />
             <div className="h-28 border-[1px] border-[#ebebeb] bg-no-repeat bg-center bg-[length:65%]  bg-clip-border bg-[url('https://bizweb.dktcdn.net/100/117/632/themes/157694/assets/logo1.png?1564585558451')]" />
@@ -26,10 +32,26 @@ const Product: React.FC = () => {
             <div className="h-28 border-[1px] border-[#ebebeb] bg-no-repeat bg-center bg-[length:65%]  bg-clip-border bg-[url('https://bizweb.dktcdn.net/100/117/632/themes/157694/assets/logo1.png?1564585558451')]" />
           </div>
 
-          <div className="overflow-hidden">
+          <div className="overflow-hidden border-[1px] border-[#ebebeb] mt-large">
             <Swiper
-              modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+              grid={{
+                rows: 2,
+                fill: 'row'
+              }}
+              modules={[Grid, Mousewheel, Autoplay]}
+              autoplay={{ delay: 2000 }}
+              className="mySwiper"
             >
+              <SwiperSlide>
+                <ProductItemVer />
+                <div className="mx-medium border-[1px] border-[#ebebeb]"></div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductItemVer />
+                <div className="mx-medium border-[1px] border-[#ebebeb]"></div>
+              </SwiperSlide>
+
+
               <SwiperSlide>
                 <ProductItemVer />
               </SwiperSlide>
@@ -52,7 +74,7 @@ const Product: React.FC = () => {
                   Keyboard,
                   Autoplay,
                 ]}
-                autoplay={{ delay: 3000 }}
+                autoplay={{ delay: 2000 }}
               >
                 <SwiperSlide>
                   <div className="relative">
