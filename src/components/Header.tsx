@@ -281,7 +281,7 @@ export default function DrawerAppBar(props: Props) {
         <AppBar
           component="nav"
           style={{
-            background: KColor.primary.default,
+            background: KColor.primary.normal1,
           }}
         >
           <Toolbar className="container-custom flex row justify-between">
@@ -297,7 +297,7 @@ export default function DrawerAppBar(props: Props) {
 
             <Box sx={{ display: { xs: "none", sm: "block", md: "flex" } }}>
               <Link className="p-large" href="/dashboard">
-                <Typography color={"primary"}>Trang Chu</Typography>
+                <Typography>Trang Chu</Typography>
               </Link>
 
               <Link className="p-large" href="/introduce">
