@@ -10,10 +10,16 @@ const NewPost: React.FC = () => {
       </div>
       <div>
         <div className="flex flex-col md:flex-row">
-          <div className="bg-blue-200 p-4 md:flex-[5]">Phần 1 (3 phần)</div>
+          <div className="bg-blue-200 p-4 md:flex-[5]">
+            {/* <PostItem /> */}
+          </div>
 
-          <div className="bg-green-200 p-4 md:flex-[5]">Phần 2 (5 phần)</div>
-          <div className="bg-red-200 p-4 md:flex-[5]">Phần 2 (5 phần)</div>
+          <div className="bg-green-200 p-4 md:flex-[5]">
+            {/* <PostItem /> */}
+          </div>
+          <div className="bg-red-200 p-4 md:flex-[5]">
+            {/* <PostItem /> */}
+          </div>
         </div>
       </div>
     </div>
@@ -21,3 +27,7 @@ const NewPost: React.FC = () => {
 };
 
 export default NewPost;
+
+export const PostItem = () => {
+  return <div>PostItem</div>;
+};

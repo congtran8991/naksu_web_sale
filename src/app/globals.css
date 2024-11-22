@@ -33,7 +33,7 @@ body {
 }
 
 .container-custom {
-  @apply sm:container max-w-[100vw] overflow-auto mn:px-4 sm:px-0;
+  @apply md:container max-w-[100vw] overflow-auto mn:px-4 sm:px-4;
 }
 
 .p-small {
@@ -122,6 +122,66 @@ body {
 
 .pb-large {
   @apply pb-4 /* 16px 1rem */
+}
+
+/* -------------------------------- */
+
+.p-x-large {
+  @apply p-6 /* 24px 1.5rem */
+}
+
+.px-x-large {
+  @apply px-6 /* 24px 1.5rem */
+}
+
+.py-x-large {
+  @apply py-6 /* 24px 1.5rem */
+}
+
+.pl-x-large {
+  @apply pl-6 /* 24px 1.5rem */
+}
+
+.pr-x-large {
+  @apply pr-6 /* 24px 1.5rem */
+}
+
+.pt-x-large {
+  @apply pt-6 /* 24px 1.5rem */
+}
+
+.pb-x-large {
+  @apply pb-6 /* 24px 1.5rem */
+}
+
+/* -------------------------------- */
+
+.p-xl-large {
+  @apply p-8 /* 32px 2rem */
+}
+
+.px-xl-large {
+  @apply px-8 /* 32px 2rem */
+}
+
+.py-xl-large {
+  @apply py-8 /* 32px 2rem */
+}
+
+.pl-xl-large {
+  @apply pl-8 /* 32px 2rem */
+}
+
+.pr-xl-large {
+  @apply pr-8 /* 32px 2rem */
+}
+
+.pt-xl-large {
+  @apply pt-8 /* 32px 2rem */
+}
+
+.pb-xl-large {
+  @apply pb-8 /* 32px 2rem */
 }
 
 
@@ -218,4 +278,66 @@ body {
 .mb-large {
   @apply mb-4 /* 16px 1rem */
 }
+
+/* -------------------------------- */
+
+.m-x-large {
+  @apply m-6 /* 24px 1.5rem */
+}
+
+.mx-x-large {
+  @apply mx-6 /* 24px 1.5rem */
+}
+
+.my-x-large {
+  @apply my-6 /* 24px 1.5rem */
+}
+
+.ml-x-large {
+  @apply ml-6 /* 24px 1.5rem */
+}
+
+.mr-x-large {
+  @apply mr-6 /* 24px 1.5rem */
+}
+
+.mt-x-large {
+  @apply mt-6 /* 24px 1.5rem */
+}
+
+.mb-x-large {
+  @apply mb-6 /* 24px 1.5rem */
+}
+
+/* -------------------------------- */
+
+.m-xl-large {
+  @apply m-8 /* 36px 2rem */
+}
+
+.mx-xl-large {
+  @apply mx-8 /* 36px 2rem */
+}
+
+.my-xl-large {
+  @apply my-8 /* 36px 2rem */
+}
+
+.ml-xl-large {
+  @apply ml-8 /* 36px 2rem */
+}
+
+.mr-xl-large {
+  @apply mr-8 /* 36px 2rem */
+}
+
+.mt-xl-large {
+  @apply mt-8 /* 36px 2rem */
+}
+
+.mb-xl-large {
+  @apply mb-8 /* 36px 2rem */
+}
+
+
 

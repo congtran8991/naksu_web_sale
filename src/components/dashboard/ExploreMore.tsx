@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import ProductItemHoz from "../common/ProductItemHoz";
 const ExploreMore: React.FC = () => {
   return (
     <div className="container-custom">
@@ -15,22 +16,37 @@ const ExploreMore: React.FC = () => {
         kết luôn mang đến cho các mẹ và bé những sản phẩm tốt nhất, chất lượng
         nhất.
       </div>
-      <div>
-        <Swiper
-          watchSlidesProgress={true}
-          slidesPerView={3}
-          className="mySwiper"
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper>
+      <div className="border-[1px] border-[#ebebeb]">
+        <div className="p-xl-large">
+          <Swiper
+            watchSlidesProgress={true}
+            slidesPerView={4}
+            spaceBetween={16}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <ProductItemHoz />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItemHoz />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItemHoz />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItemHoz />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItemHoz />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItemHoz />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductItemHoz />
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );

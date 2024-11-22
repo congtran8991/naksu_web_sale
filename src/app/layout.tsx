@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 import { UserProvider } from "@/contexts/UserContext";
+import { ThemeContextProvider } from "@/contexts/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +20,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <LocaleProvider>
-      <UserProvider>
-        <html lang="en">
-          <body className={inter.className}>
-            <Header />
-            {children}
-            <Footer />
-          </body>
-        </html>
-      </UserProvider>
-    </LocaleProvider>
+    <ThemeContextProvider>
+      <LocaleProvider>
+        <UserProvider>
+          <html lang="en">
+            <body className={inter.className}>
+              <Header />
+              {children}
+              <Footer />
+            </body>
+          </html>
+        </UserProvider>
+      </LocaleProvider>
+    </ThemeContextProvider>
   );
 }
