@@ -31,3 +31,313 @@ body {
     text-wrap: balance;
   }
 }
+
+.container-custom {
+  @apply md:container max-w-[100vw] overflow-auto mn:px-4 sm:px-4;
+}
+
+.p-small {
+  @apply p-1.5 /* 6px 0.375rem */
+}
+
+.px-small {
+  @apply px-1.5 /* 6px 0.375rem */
+}
+
+.py-small {
+  @apply py-1.5 /* 6px 0.375rem */
+}
+
+.pl-small {
+  @apply pl-1.5 /* 6px 0.375rem */
+}
+
+.pr-small {
+  @apply pr-1.5 /* 6px 0.375rem */
+}
+
+.pt-small {
+  @apply pt-1.5 /* 6px 0.375rem */
+}
+
+.pb-small {
+  @apply pb-1.5 /* 6px 0.375rem */
+}
+
+/* -------------------------------- */
+
+.p-medium {
+  @apply p-2.5 /* 10px 0.625rem */
+}
+
+.px-medium {
+  @apply px-2.5 /* 10px 0.625rem */
+}
+
+.py-medium {
+  @apply py-2.5 /* 10px 0.625rem */
+}
+
+.pl-medium {
+  @apply pl-2.5 /* 10px 0.625rem */
+}
+
+.pr-medium {
+  @apply pr-2.5 /* 10px 0.625rem */
+}
+
+.pt-medium {
+  @apply pt-2.5 /* 10px 0.625rem */
+}
+
+.pb-medium {
+  @apply pb-2.5 /* 10px 0.625rem */
+}
+
+/* -------------------------------- */
+
+.p-large {
+  @apply p-4 /* 16px 1rem */
+}
+
+.px-large {
+  @apply px-4 /* 16px 1rem */
+}
+
+.py-large {
+  @apply py-4 /* 16px 1rem */
+}
+
+.pl-large {
+  @apply pl-4 /* 16px 1rem */
+}
+
+.pr-large {
+  @apply pr-4 /* 16px 1rem */
+}
+
+.pt-large {
+  @apply pt-4 /* 16px 1rem */
+}
+
+.pb-large {
+  @apply pb-4 /* 16px 1rem */
+}
+
+/* -------------------------------- */
+
+.p-x-large {
+  @apply p-6 /* 24px 1.5rem */
+}
+
+.px-x-large {
+  @apply px-6 /* 24px 1.5rem */
+}
+
+.py-x-large {
+  @apply py-6 /* 24px 1.5rem */
+}
+
+.pl-x-large {
+  @apply pl-6 /* 24px 1.5rem */
+}
+
+.pr-x-large {
+  @apply pr-6 /* 24px 1.5rem */
+}
+
+.pt-x-large {
+  @apply pt-6 /* 24px 1.5rem */
+}
+
+.pb-x-large {
+  @apply pb-6 /* 24px 1.5rem */
+}
+
+/* -------------------------------- */
+
+.p-xl-large {
+  @apply p-8 /* 32px 2rem */
+}
+
+.px-xl-large {
+  @apply px-8 /* 32px 2rem */
+}
+
+.py-xl-large {
+  @apply py-8 /* 32px 2rem */
+}
+
+.pl-xl-large {
+  @apply pl-8 /* 32px 2rem */
+}
+
+.pr-xl-large {
+  @apply pr-8 /* 32px 2rem */
+}
+
+.pt-xl-large {
+  @apply pt-8 /* 32px 2rem */
+}
+
+.pb-xl-large {
+  @apply pb-8 /* 32px 2rem */
+}
+
+
+
+
+
+
+
+
+.m-small {
+  @apply p-1.5 /* 6px 0.375rem */
+}
+
+.mx-small {
+  @apply mx-1.5 /* 6px 0.375rem */
+}
+
+.my-small {
+  @apply my-1.5 /* 6px 0.375rem */
+}
+
+.ml-small {
+  @apply ml-1.5 /* 6px 0.375rem */
+}
+
+.mr-small {
+  @apply mr-1.5 /* 6px 0.375rem */
+}
+
+.mt-small {
+  @apply mt-1.5 /* 6px 0.375rem */
+}
+
+.mb-small {
+  @apply mb-1.5 /* 6px 0.375rem */
+}
+
+/* -------------------------------- */
+
+.m-medium {
+  @apply m-2.5 /* 10px 0.625rem */
+}
+
+.mx-medium {
+  @apply mx-2.5 /* 10px 0.625rem */
+}
+
+.my-medium {
+  @apply my-2.5 /* 10px 0.625rem */
+}
+
+.ml-medium {
+  @apply ml-2.5 /* 10px 0.625rem */
+}
+
+.mr-medium {
+  @apply mr-2.5 /* 10px 0.625rem */
+}
+
+.mt-medium {
+  @apply mt-2.5 /* 10px 0.625rem */
+}
+
+.mb-medium {
+  @apply mb-2.5 /* 10px 0.625rem */
+}
+
+/* -------------------------------- */
+
+.m-large {
+  @apply m-4 /* 16px 1rem */
+}
+
+.mx-large {
+  @apply mx-4 /* 16px 1rem */
+}
+
+.my-large {
+  @apply my-4 /* 16px 1rem */
+}
+
+.ml-large {
+  @apply ml-4 /* 16px 1rem */
+}
+
+.mr-large {
+  @apply mr-4 /* 16px 1rem */
+}
+
+.mt-large {
+  @apply mt-4 /* 16px 1rem */
+}
+
+.mb-large {
+  @apply mb-4 /* 16px 1rem */
+}
+
+/* -------------------------------- */
+
+.m-x-large {
+  @apply m-6 /* 24px 1.5rem */
+}
+
+.mx-x-large {
+  @apply mx-6 /* 24px 1.5rem */
+}
+
+.my-x-large {
+  @apply my-6 /* 24px 1.5rem */
+}
+
+.ml-x-large {
+  @apply ml-6 /* 24px 1.5rem */
+}
+
+.mr-x-large {
+  @apply mr-6 /* 24px 1.5rem */
+}
+
+.mt-x-large {
+  @apply mt-6 /* 24px 1.5rem */
+}
+
+.mb-x-large {
+  @apply mb-6 /* 24px 1.5rem */
+}
+
+/* -------------------------------- */
+
+.m-xl-large {
+  @apply m-8 /* 36px 2rem */
+}
+
+.mx-xl-large {
+  @apply mx-8 /* 36px 2rem */
+}
+
+.my-xl-large {
+  @apply my-8 /* 36px 2rem */
+}
+
+.ml-xl-large {
+  @apply ml-8 /* 36px 2rem */
+}
+
+.mr-xl-large {
+  @apply mr-8 /* 36px 2rem */
+}
+
+.mt-xl-large {
+  @apply mt-8 /* 36px 2rem */
+}
+
+.mb-xl-large {
+  @apply mb-8 /* 36px 2rem */
+}
+
+
+
