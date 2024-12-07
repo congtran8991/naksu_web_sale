@@ -1,5 +1,5 @@
-import { createTheme } from "@mui/material";
-import { green, pink } from "@mui/material/colors";
+import { createTheme } from '@mui/material';
+import { green } from '@mui/material/colors';
 
 const primaryTheme = createTheme({
   spacing: 10,

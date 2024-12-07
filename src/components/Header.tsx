@@ -211,25 +211,25 @@
 // }
 // export default ResponsiveAppBar;
 
-"use client";
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import Link from "next/link";
-import KColor from "@/constant/colors";
-import { useThemeContext } from "@/contexts/ThemeContext";
+'use client';
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+// import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import MenuIcon from '@mui/icons-material/Menu';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+// import Button from '@mui/material/Button';
+import Link from 'next/link';
+import KColor from '@/constant/colors';
+import { useThemeContext } from '@/contexts/ThemeContext';
 
 interface Props {
   /**
@@ -240,7 +240,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ["Trang chu", "Gioi thieu", "Dich vu"];
+const navItems = ['Trang chu', 'Gioi thieu', 'Dich vu'];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -248,14 +248,14 @@ export default function DrawerAppBar(props: Props) {
 
   const { theme } = useThemeContext();
 
-  console.log(theme, "theme123");
+  console.log(theme, 'theme123');
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         MUI
       </Typography>
@@ -263,7 +263,7 @@ export default function DrawerAppBar(props: Props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -277,7 +277,7 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <div>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: 'flex' }}>
         <AppBar
           component="nav"
           style={{
@@ -290,36 +290,36 @@ export default function DrawerAppBar(props: Props) {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
+              sx={{ mr: 2, display: { sm: 'none' } }}
             >
               <MenuIcon />
             </IconButton>
 
-            <Box sx={{ display: { xs: "none", sm: "block", md: "flex" } }}>
+            <Box sx={{ display: { xs: 'none', sm: 'block', md: 'flex' } }}>
               <Link className="p-large" href="/dashboard">
-                <Typography>Trang Chu</Typography>
+                <Typography color={'primary'}>Trang Chu</Typography>
               </Link>
 
               <Link className="p-large" href="/introduce">
-                <Typography color={"primary"}>Giới thiệu</Typography>
+                <Typography color={'primary'}>Giới thiệu</Typography>
               </Link>
 
               <Link className="p-large" href="/service">
-                <Typography color={"primary"}>Dịch Vụ</Typography>
+                <Typography color={'primary'}>Dịch Vụ</Typography>
               </Link>
             </Box>
 
-            <Box sx={{ display: { xs: "none", sm: "block", md: "flex" } }}>
+            <Box sx={{ display: { xs: 'none', sm: 'block', md: 'flex' } }}>
               <Link className="p-large" href="/product">
-                <Typography color={"primary"}>Sản Phẩm</Typography>
+                <Typography color={'primary'}>Sản Phẩm</Typography>
               </Link>
 
               <Link className="p-large" href="/news">
-                <Typography color={"primary"}>Tin Tức</Typography>
+                <Typography color={'primary'}>Tin Tức</Typography>
               </Link>
 
               <Link className="p-large" href="/contact">
-                <Typography color={"primary"}>Liên Hệ</Typography>
+                <Typography color={'primary'}>Liên Hệ</Typography>
               </Link>
             </Box>
           </Toolbar>
@@ -334,9 +334,9 @@ export default function DrawerAppBar(props: Props) {
               keepMounted: true, // Better open performance on mobile.
             }}
             sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": {
-                boxSizing: "border-box",
+              display: { xs: 'block', sm: 'none' },
+              '& .MuiDrawer-paper': {
+                boxSizing: 'border-box',
                 width: drawerWidth,
               },
             }}

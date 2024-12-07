@@ -1,10 +1,19 @@
-import { TextField } from "@mui/material";
-import { forwardRef, memo } from "react";
-import { useInputOptions } from "./helpers";
+import { TextField } from '@mui/material';
+import { forwardRef, memo } from 'react';
+import { useInputOptions } from './helpers';
 
-const KTextField = forwardRef<HTMLInputElement, any>((props, ref) => {
+// eslint-disable-next-line react/display-name
+const KTextField = forwardRef<HTMLInputElement, unknown>((props, ref) => {
   const { combinedRef } = useInputOptions(props, ref);
-  return <TextField size="small" inputRef={combinedRef} variant="outlined" autoComplete="off" />;
+  return (
+    // eslint-disable-next-line react/react-in-jsx-scope
+    <TextField
+      size="small"
+      inputRef={combinedRef}
+      variant="outlined"
+      autoComplete="off"
+    />
+  );
 });
 
 export default memo(KTextField);
