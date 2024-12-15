@@ -26,7 +26,7 @@ export default function Dashboard() {
     },
   });
 
-  const [firstName] = useWatch({
+  const [firstNam2] = useWatch({
     control: methods.control,
     name: ['firstName'],
   });
