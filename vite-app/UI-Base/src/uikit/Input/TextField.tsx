@@ -1,15 +1,15 @@
 'use client';
 
 import { TextField } from '@mui/material';
-import { forwardRef, memo, useRef } from 'react';
-import useCombineRefs from '../../hooks/useCombineRefs';
+import { forwardRef, memo } from 'react';
+
+import { useInputOptions } from './helpers';
 
 interface KInputProps {}
-const KTextField = forwardRef<KInputProps, HTMLInputElement>((props, ref) => {
-  const innerRef = useRef<HTMLInputElement>();
-  const inputRef = useCombineRefs(ref, innerRef);
+const KTextField = forwardRef<any, any>((props, ref) => {
+  const inputOptions = useInputOptions(props, ref);
   return (
-    <TextField inputRef={inputRef} id="age" label="firstName" margin="normal" />
+    <TextField id="age" label="firstName" margin="normal" {...inputOptions} />
   );
 });
 

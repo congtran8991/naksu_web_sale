@@ -6,6 +6,7 @@ import * as yup from 'yup';
 import { TextField } from '@mui/material';
 import React from 'react';
 import { useResolverForm } from '@/core/useResolverForm';
+import { KInput } from 'vite-app/UI-Base/src';
 
 const schema = yup.object({
   firstName: yup.string().required('Please enter your first name'), // Cập nhật thông báo rõ ràng hơn
@@ -31,7 +32,7 @@ export default function Dashboard() {
     name: ['firstName'],
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: unknown) => {
     console.log(data, 'Form Data');
   };
 
@@ -43,16 +44,21 @@ export default function Dashboard() {
           control={methods.control}
           rules={{ required: true }}
           render={({ field, fieldState: { error } }) => (
-            <TextField
+            <KInput.TextField
               {...field}
-              id="age"
-              label="firstName"
-              variant="outlined"
-              fullWidth
-              margin="normal"
               error={!!error?.message}
-              helperText={error?.message}
+              message={error?.message}
             />
+            // <TextField
+            //   {...field}
+            //   id="age"
+            //   label="firstName"
+            //   variant="outlined"
+            //   fullWidth
+            //   margin="normal"
+            //   error={!!error?.message}
+            //   helperText={error?.message}
+            // />
           )}
         />
         <input type="submit" value="Submit" style={{ marginTop: '20px' }} />

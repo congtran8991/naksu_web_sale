@@ -1,7 +1,7 @@
 import TextField from './TextField';
 
 class KInput {
-  TextField = TextField;
+  static TextField = TextField;
 }
 
 export default KInput;
