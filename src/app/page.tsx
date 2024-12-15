@@ -1,5 +1,6 @@
-import Image from "next/image";
-import { KButton, TestA } from "vite-app/UI-Base/src";
+import React from 'react';
+import Image from 'next/image';
+import { KButton, TestA } from 'vite-app/UI-Base/src';
 
 export default function Home() {
   return (
